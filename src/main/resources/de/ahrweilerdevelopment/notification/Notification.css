@@ -1,0 +1,33 @@
+.root {
+  -fx-spacing: 8px;
+  -fx-border-color: transparent;
+}
+
+.notification {
+  -fx-background-color: #fff;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 4, 0, 0, 0);
+  -fx-background-radius: 4px;
+}
+.notification .header {
+  -fx-padding: 4px;
+}
+.notification .close {
+  -fx-background-color: red;
+  -fx-min-width: 24px;
+  -fx-min-height: 24px;
+}
+.notification .icon {
+  -fx-min-width: 24px;
+  -fx-min-height: 24px;
+}
+.notification:info .icon {
+  -fx-background-color: blue;
+}
+.notification:warn .icon {
+  -fx-background-color: orange;
+}
+.notification:error .icon {
+  -fx-background-color: red;
+}
+
+/*# sourceMappingURL=Notification.css.map */

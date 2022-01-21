@@ -1,0 +1,32 @@
+.root
+  -fx-spacing: 8px
+  -fx-border-color: transparent
+
+.notification
+  -fx-background-color: #fff
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 4, 0, 0, 0)
+  -fx-background-radius: 4px
+
+  .header
+    -fx-padding: 4px
+
+  .close
+    -fx-background-color: red
+    -fx-min-width: 24px
+    -fx-min-height: 24px
+
+  .icon
+    -fx-min-width: 24px
+    -fx-min-height: 24px
+
+  &:info
+    .icon
+      -fx-background-color: blue
+
+  &:warn
+    .icon
+      -fx-background-color: orange
+
+  &:error
+    .icon
+      -fx-background-color: red
